@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>KHU KHU Chat</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+//color.js 앞에 jquery 써줘야함
+</script>
+
+<script src="colors.js"></script>
+</head>
+<body>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <!-- button2 making and using function -->
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+
+    <div id="grid">
+      <ol>
+        <li><a href="whatiskhuchat.html" class="saw">What is KHU chat? </a></li>
+        <li><a href="loginmain.html" class="saw">로그인</a></li>
+        <li><a href="signinmain.html" class="saw">회원가입</a></li>
+        <li><a href="question.html" class="saw">문의사항</a></li>
+        <li><a href="afterlogin.html" class="saw">로그인이후</a></li>
+      </ol>
+        <div id="article">
+          <h2>회원가입</h2>
+          <div id="inputset">
+          <form class="signinform" action="loginmain.html">
+            <label for="email">Email:</label><br>
+            <input type="text" name="email"><br>
+
+            <label for="password">password:</label><br>
+            <input type="password" name="password"><br>
+
+            <label for="name">이름:</label><br>
+            <input type="text" name="name"><br>
+
+            <label for="age">나이:</label><br>
+            <input type="text" name="age"><br><br>
+
+            <label for="sex">성별:</label><br>
+            <input type="radio" value="man" name="sex">남자<br>
+            <input type="radio" value="woman" name="sex">여자<br><br>
+
+            <label for="work">직업:</label><br>
+            <input type="radio" value="nowork" name="work">무직<br>
+            <input type="radio" value="Hstudent" name="work">중/고생<br>
+            <input type="radio" value="Ustudent" name="work">대학생<br>
+            <input type="radio" value="worker" name="work">직장인<br><br>
+
+            <label for="interesting">관심사(중복선택가능):</label><br>
+            <input type="checkbox" value="movie" name="interesting">영화<br>
+            <input type="checkbox" value="song" name="interesting">노래<br>
+            <input type="checkbox" value="study" name="interesting">공부<br>
+            <input type="checkbox" value="coding" name="interesting">코딩<br><br>
+
+            <input type="submit" value="회원가입신청">
+          </form>
+          </div>
+
+
+        </div>
+    </div>
+
+
+  </body>
+  </html>

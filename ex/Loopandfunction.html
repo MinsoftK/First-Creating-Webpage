@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<title>KHU KHU Chat</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="style.css">
+<script>
+function LinksSetColor(color){
+  var alist=document.querySelectorAll('a');
+  var i =0;
+  while(i<alist.length)
+  {
+  alist[i].style.color=color;
+  i+=1;
+  }
+}
+var Body={
+  setColor:function(color){
+
+  }
+}
+function bodySetColor(color){
+  document.querySelector('body').style.color= color;
+}
+function bodySetBackGruondColor(color){
+  document.querySelector('body').style.backgroundColor= color;
+}
+function nightDayHandler(self){
+    if(self.value==='night')
+    {
+      bodySetBackGruondColor('black')
+      bodySetColor('white');
+      self.value= 'day';
+
+      setColor('powderblue');
+
+    }else{
+      bodySetBackGruondColor('white')
+      bodySetColor('black');
+      self.value= 'night';
+
+      setColor('blue');
+    }
+  }
+</script>
+</head>
+<body>
+
+  <h1><a href="main.html" color:black>KHU Chatting service</a></h1>
+  <img src="image/signin.jpg" class="image">
+
+<!--refactoring and conditional statement -->
+
+
+<!-- about this grammer
+
+  <input type="button" value="night" onclick="
+  if(this.value==='night')
+  {
+    document.querySelector('body').style.backgroundColor= 'black';
+    document.querySelector('body').style.color= 'white';
+    this.value= 'day';
+  }else{
+    document.querySelector('body').style.backgroundColor= 'white';
+    document.querySelector('body').style.color= 'black';
+    this.value= 'night';
+  }
+  ">
+ -->
+
+
+
+<!-- about array
+  <script>
+    var cowokers=["minsing","minsoft"];
+    document.write(cowokers[0]);
+    document.write(cowokers[1]);
+    cowokers.push("ssssss")
+    document.write(cowokers);
+  </script>
+-->
+
+<!-- about Loop
+<ul>
+  <script>
+  var i=0;
+    while(i<3)
+    {
+      document.write("<li>var</li>")
+      i+=1;
+    }
+  </script>
+</ul>
+-->
+
+
+
+<!--Loop & Array
+<script>
+  var cowokers=["minsung","leezche","minsoft","sdy"];
+</script>
+
+<script>
+  var i=0;
+  while( i< cowokers.length ){
+    document.write('<li><a href="http://a.com/'+cowokers[i]+'">'+cowokers[i]+'</a></li>');
+    i+=1;
+  }
+</script>
+-->
+
+<!-- Loop apply
+var alist=document.querySelectorAll('a');
+var i =0;
+while(i<alist.length){
+console.log(alist[i]);
+i+=1;
+}
+-->
+
+<!-- button 1  usage array and Loop for chage style
+  self를 통한 input의 객체 지정해주기
+  지정해주기전에는 전역객체를 가르키게 된다.
+  -->
+<input id="night_day" type="button" value="night" onclick="
+  nightDayHandler(this);
+">
+
+<!-- button2 making and using function -->
+  <input id="night_day" type="button" value="night" onclick="
+  nightDayHandler(this);
+  ">
+
+  <div id="grid">
+    <ol>
+      <li><a href="whatiskhuchat.html" class="saw">What is KHU chat? </a></li>
+      <li><a href="loginmain.html" class="saw">로그인</a></li>
+      <li><a href="signinmain.html" class="saw">회원가입</a></li>
+      <li><a href="question.html" class="saw">문의사항</a></li>
+      <li><a href="afterlogin.html" class="saw">로그인이후</a></li>
+    </ol>
+      <div id="article">
+        <h2>회원가입</h2>
+        <div id="inputset">
+        <form class="signinform" action="loginmain.html">
+          <label for="email">Email:</label><br>
+          <input type="text" name="email"><br>
+
+          <label for="password">password:</label><br>
+          <input type="password" name="password"><br>
+
+          <label for="name">이름:</label><br>
+          <input type="text" name="name"><br>
+
+          <label for="age">나이:</label><br>
+          <input type="text" name="age"><br><br>
+
+          <label for="sex">성별:</label><br>
+          <input type="radio" value="man" name="sex">남자<br>
+          <input type="radio" value="woman" name="sex">여자<br><br>
+
+          <label for="work">직업:</label><br>
+          <input type="radio" value="nowork" name="work">무직<br>
+          <input type="radio" value="Hstudent" name="work">중/고생<br>
+          <input type="radio" value="Ustudent" name="work">대학생<br>
+          <input type="radio" value="worker" name="work">직장인<br><br>
+
+          <label for="interesting">관심사(중복선택가능):</label><br>
+          <input type="checkbox" value="movie" name="interesting">영화<br>
+          <input type="checkbox" value="song" name="interesting">노래<br>
+          <input type="checkbox" value="study" name="interesting">공부<br>
+          <input type="checkbox" value="coding" name="interesting">코딩<br><br>
+
+          <input type="submit" value="회원가입신청">
+        </form>
+        </div>
+
+
+      </div>
+  </div>
+
+
+</body>
+</html>

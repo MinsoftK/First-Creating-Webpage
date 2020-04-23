@@ -1,0 +1,171 @@
+<style>
+  title{
+
+  }
+  body
+  {
+    margin:0;
+  }
+  h1
+  {
+      text-align:center;
+      color:"black";
+      margin:0;
+      padding:20px
+  }
+  a
+  {
+      color:"black";
+      text-decoration: none;
+    }
+  ol
+  {
+
+      width:150px;
+      margin:50px;
+      padding:20px;
+
+    }
+
+  .image
+    {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom:10px;
+
+    }
+  .saw
+  {
+    color: black;
+    text-decoration: none;
+  }
+
+  #grid
+  {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      border-top:1px solid gray;
+
+  }
+  #grid ol
+  {
+      padding-left: 40px;
+      margin:0;
+      font-size: 15px;
+  }
+  #grid li
+  {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size:15px;
+  }
+  #grid #article
+  {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 130px;
+      border-left:1px solid gray;
+      /*grid안에 #article */
+  }
+
+    @media (min-width:300px) and (max-width:700px){
+      #grid
+        {
+            display: block;
+        }
+        h1
+        {
+            text-align:center;
+            color:"black";
+            margin:0;
+            padding:20px
+        }
+        ol
+        {
+            border-right:none;
+            margin-left:35px;
+            padding-left:60px;
+        }
+        #grid #category
+          {
+              border-bottom: 1px solid gray;
+
+          }
+
+        #grid ol
+          {
+              padding-left: 40px;
+              margin:0;
+              font-size: 15px;
+
+          }
+        #grid li
+          {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              font-size:15px;
+
+          }
+          #grid #article
+          {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 20px;
+              display: inline-block;
+              /*grid안에 #article */
+          }
+  }
+
+    @media (min-width:700px) and (max-width:1024px){
+
+        #grid
+        {
+            display: block;
+        }
+        h1
+        {
+            text-align:center;
+            color:"black";
+            margin:0;
+            padding:20px
+        }
+        ol
+        {
+            border-right:none;
+            margin-left:35px;
+            padding-left:60px;
+            display: inline-block;
+        }
+        #grid #category
+        {
+            border-bottom: 1px solid gray;
+            text-align: center;
+            list-style-position: inside;
+        }
+
+        #grid ol
+        {
+            padding-left: 40px;
+            margin:0;
+            font-size: 15px;
+
+        }
+        #grid li
+        {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size:15px;
+        }
+        #grid #article
+        {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            text-align: center;
+            /*grid안에 #article */
+        }
+
+    }
+</style>
