@@ -1,3 +1,4 @@
+
 var Email={
     checkEmail:function(self){
         var email=document.getElementById('eValidation').value;
@@ -5,6 +6,7 @@ var Email={
         if(regExp.test(email)){
           return true;
         }else if(email===""){
+          focusFunction("#eValidation");
           alert("이메일을 입력해주세요!");
           return false;
         }
@@ -36,4 +38,14 @@ function checkValidation(self){
       return true;
     }else return false;
 
+}
+
+function checkPasswordMatch() {
+    var password = $("#fpassword").val();
+    var confirmPassword = $("#spassword").val();
+
+    if (password != confirmPassword)
+        $("#message").html("비밀번호가 일치하지 않습니다.!");
+    else
+        $("#message").html("일치.");
 }
