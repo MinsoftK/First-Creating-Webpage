@@ -13,8 +13,8 @@ HTML에 삽입된 그림들
 Pixabay, Unsplash 에서 가져온 저작권 없는 사진들
 
 ### JS
-HTML에 적용된 JavaScript 소스파일이다.
-
+* HTML에 적용된 JavaScript 소스파일이다.
+* Login page에서의 validation.js (비밀번호 일치 불일치, 이메일 형식등 Ajax를 활용한 처리) 가 들어있다.
 
 ### service
 main.index에서 각각의 서비스들로 이용할 때 활용하려 했으나
